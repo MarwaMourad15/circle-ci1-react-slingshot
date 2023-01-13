@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        key: "npm_package"
+          key: "npm_package"
       - run: npm i
       - run: npm run test
   
@@ -45,7 +45,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        key: "npm_package"
+          key: "npm_package"
       - run: npm audit
 
   
